@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
 export default defineConfig(({ command }) => ({
-    base: command === 'build' ? '/Ivan6813/' : '/',
+    base: command === 'build' ? '/KononOleg/' : '/',
     plugins: [react()],
     server: {
         host: true,
@@ -22,4 +22,4 @@ export default defineConfig(({ command }) => ({
             '@utils': path.resolve(__dirname, 'src/utils'),
         },
     },
-});
+}));
