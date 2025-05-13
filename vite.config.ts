@@ -3,7 +3,8 @@ import path from 'path';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+    base: command === 'build' ? '/Ivan6813/' : '/',
     plugins: [react()],
     server: {
         host: true,
